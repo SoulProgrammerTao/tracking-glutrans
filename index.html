@@ -31,6 +31,13 @@
     
     <!-- 自定义工具类 -->
     <style type="text/tailwindcss">
+      /* 隐藏 Netlify 默认品牌横幅 */
+      [data-netlify-promo],
+      [class*="netlify-promo"],
+      #netlify-promo {
+        display: none !important;
+      }
+
       @layer utilities {
         .timeline-line {
           @apply absolute left-3 top-6 bottom-0 w-0.5 bg-gray-200;
@@ -45,9 +52,6 @@
           @apply bg-gray-300;
         }
       }
-    </style>
-    <style>
-      [data-netlify-promo] { display: none !important; }
     </style>
   </head>
   <body>
